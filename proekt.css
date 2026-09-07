@@ -1,0 +1,638 @@
+/* Основни настройки - за всички сайтове */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*JS button*/
+#btn {
+   display: block;           
+    bottom: 40px;             
+    right: 40px;             
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #0f2e4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #274f78;
+}
+
+
+
+
+
+/*RESPONSIVE DESIGN*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+content:"";
+clear: both;
+display: table;
+}
+
+[class*="col-"] {
+        width: 100%;
+        float: left;
+        padding: 5px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* много малки телефони */
+@media only screen and (max-width: 480px) { 
+    
+    [class*="col-"] { 
+        padding: 15px; 
+        width: 100%; 
+    } 
+    
+    .text h1 {
+        font-size: 24px;
+    }
+    
+    form label {
+        display: block;
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        display: block;
+        width: 100%;
+    }
+    
+
+    
+   .nikola1 {
+        float: none;       
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 300px;
+    }
+    
+    .biografiq {
+        padding: 15px;
+    }
+    
+    /*футъра*/
+    .goren-footer {
+        flex-direction: column;
+    }
+
+    .footer-spisuk, .socials {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+
+/* телефони - по-малко от 600px */
+@media screen and (max-width: 600px) {
+    .text h1 {
+        font-size: 24px;
+    }
+    
+    form label {
+        display: block;
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        display: block;
+        width: 100%;
+    }
+    
+    
+   .nikola1 {
+        float: none;       
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 300px;
+    }
+    
+    .biografiq {
+        padding: 15px;
+    }
+    
+    /*футъра*/
+    .goren-footer {
+        flex-direction: column;
+    }
+
+    .footer-spisuk, .socials {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+/* телефони и таблети */
+@media only screen and (max-width: 768px) { 
+   
+    /*за страницата с личностите*/
+    [class*="col-"] { 
+        padding: 15px; 
+        width: 100%; 
+        float: none; 
+    } 
+    
+   .nikola1 {
+        float: none;       
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 300px;
+    }
+    
+    .biografiq {
+        padding: 15px;
+    }
+    
+    /*футъра*/
+    .goren-footer {
+        flex-direction: column;
+    }
+
+    .footer-spisuk, .socials {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+} 
+
+/* таблети и по-малки лаптопи*/
+@media only screen and (max-width: 992px) { 
+ 
+} 
+
+
+
+
+
+/* НАЧАЛНА СТРАНИЦА */
+.header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*ЛОГО, СЛОГАН И ЛИНК КЪМ ТЯХ*/
+.link-header {
+    text-decoration: none;
+        display: flex;      
+    align-items: center;    
+}
+
+.logo-slogan {
+    display: flex; 
+    align-items: center;
+}
+    
+.logo {
+    width: 150px; 
+    height: auto;
+    margin-right: 0px;
+    display: block;
+}
+
+.slogan {
+   font-family: 'Lora', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #0F2A44; /* тъмно синьо */
+    text-align: left;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+/*НАВИГАЦИОННО МЕНю*/
+#menu, ul, li, a {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    color: #0F2A44; /* тъмно синьо */
+    text-align: left;  
+}
+
+#spisuk li {
+     display: inline;
+  margin-right: -5px;
+  padding:18px 25px;
+  background-color:lightgrey;
+  border: 1px solid #0f2e4d;
+}
+
+#spisuk a {
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+#spisuk li a:hover {
+    color: white;
+}
+
+/*СНИМКА*/
+.blue-image {
+    height: auto;
+    width: 100%; /*използваме проценти, за да не се получи overflow*/
+}
+
+.text {
+   color:  #0f2e4d;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.text h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.text h2 {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.text h3 {
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+#paragraf1 {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.button1 {
+    color: white;
+    background-color: #0F2A44; 
+}
+
+.button1:hover {
+    background-color: #274f78;
+}
+
+
+ol {
+    padding-left: 20px; 
+}
+
+ol li {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.button1 {
+    padding:  5px 20px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 20px 50px;
+    display: block;
+}
+
+hr {
+    margin: 60px 0;
+}
+
+/* Футър */
+.goren-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 30px auto;
+    margin-bottom: 40px;
+}
+
+.footer-spisuk ul {
+    list-style-type: none;
+}
+
+.footer-spisuk li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-spisuk li {
+     font-size: 14px;
+     margin-right: 200px;
+     margin-top: 5px;
+}
+
+.socials p {
+    text-align: center;
+    color: #0F2A44;
+}
+
+.socials img{
+     width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.dolen-footer p {
+    text-align: center;
+    color: #0F2A44;
+}
+
+
+/*ЛИЧНОСТИ ГАЛЕРИЯ - страница със съдържание*/
+
+.lichnosti-text {
+    color:  #0f2e4d;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.lichnosti-text h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.lichnosti-text p {
+    font-size: 20px;
+}
+
+/*КУТИЯТА, покрай личностите*/
+.izbor {
+    border: 1px solid #d1cfcf;
+    padding: 10px;
+    background-color: #e6e7e8;
+    margin-bottom: 150px;
+}
+
+.izbor:hover {
+    background-color: #d1cfcf;
+}
+
+.izbor img {
+    width: 100%;
+   max-width: 500px; 
+   height: 450px;
+    margin: 0 auto;
+    object-fit: cover; /* за да не се сплескват снимките*/
+}
+
+.izbor h4 {
+    font-size: 23px;
+    text-align: center;
+}
+  
+.izbor a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row .col-4 {
+    float: none;
+    width: 350px;    
+    margin: 0 70px;    /* разстоянието между личностите */
+       margin-top: 50px;
+}
+
+
+/*страница за Никола Тесла*/
+
+.biografiq {
+    color:  #0f2e4d;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nikola1 {
+    float: right;
+   margin-left: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: auto; 
+    border: 5px solid #0f2e4d;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*СНИМКИ НА КУЛАТА*/
+.kula {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    object-fit: cover;
+    float: left;
+    margin-left: 20px;
+}
+
+/*ТАБЛИЦА*/
+.izobreteniq {
+    margin: 20px auto;
+    text-align: center;
+    color: #0f2e4d;
+}
+
+table {
+    margin: 30px auto;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    padding: 5px;
+    font-size: 18px;
+    color: #0f2e4d;
+    border: 1px solid #0f2e4d;
+    border-collapse: collapse;
+}
+
+/*страница за АЛЪН ТЮРИНГ*/
+
+.alan1 {
+    float: right;
+   margin-left: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: auto; 
+     border: 5px solid #0f2e4d;
+}
+
+/*страница за ХЕДИ ЛАМАР*/
+
+.hedy1 {
+    float: right;
+   margin-left: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: auto; 
+     border: 5px solid #0f2e4d;
+}
+
+/*страница за КОНТАКТИ*/
+form {
+    max-width: 600px;
+    margin: 80px auto;
+}
+
+form label {
+    display: inline-block;
+    width: 140px;  
+    margin-top: 15px;
+    vertical-align: top;
+    color: #0f2e4d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    display: inline-block;
+    width: 420px;
+    padding: 10px;
+     margin-top: 15px;
+    font-size: 16px;    
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    margin-top: 20px;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+    
+.kontakti-text {
+      color:  #0f2e4d;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 0px;  
+  }
+  
+
+.kontakti-text h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.kontakti-text h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.lichnosti-text p {
+    font-size: 20px;
+}
+
+.button2 {
+    color: white;
+    background-color: #0F2A44; 
+}
+
+.button1:hover {
+    background-color: #274f78;
+}
+
+@media (max-width: 768px) {
+
+    /* 1. Хедърът да стане на два реда (лого горе, меню долу) */
+    .header { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* 2. Логото да е малко, за да не бута текста */
+    .logo { 
+        width: 50px; 
+        height: auto;
+    }
+    
+    .slogan {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #menu {
+        width: 100%;
+        text-align: center; /* Центрираме целия блок с бутони */
+    }
+    
+    /* 3. Бутоните да се свият, за да се съберат на един ред */
+    #spisuk li { 
+         display: inline-block;
+         width: auto;
+         font-size: 14px;
+        padding: 5px; 
+    }
+
+    /* 4. Галерията да стане вертикална колона */
+    .row {
+        flex-direction: column;
+    }
+    .row .col-4 {
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+        float: none;
+    }
+
+}
