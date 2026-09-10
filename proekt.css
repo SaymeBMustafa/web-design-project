@@ -1,37 +1,20 @@
-/* Основни настройки - за всички сайтове */
+/* ОСНОВНИ НАСТРОЙКИ - за всички сайтове */
 body {
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
-/*JS button*/
-#btn {
-   display: block;           
-    bottom: 40px;             
-    right: 40px;             
-    font-size: 18px;
-    padding: 10px 15px;
-    background-color: #0f2e4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#btn:hover {
-    background-color: #274f78;
-}
-
-
-
-
-
-/*RESPONSIVE DESIGN*/
-
 * {
     box-sizing: border-box;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*МРЕЖА*/
 
 .row::after {
 content:"";
@@ -58,137 +41,23 @@ display: table;
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* много малки телефони */
-@media only screen and (max-width: 480px) { 
-    
-    [class*="col-"] { 
-        padding: 15px; 
-        width: 100%; 
-    } 
-    
-    .text h1 {
-        font-size: 24px;
-    }
-    
-    form label {
-        display: block;
-        width: 100%;
-    }
-
-    form input,
-    form textarea {
-        display: block;
-        width: 100%;
-    }
-    
-
-    
-   .nikola1 {
-        float: none;       
-        display: block;
-        margin: 0 auto 20px;
-        max-width: 300px;
-    }
-    
-    .biografiq {
-        padding: 15px;
-    }
-    
-    /*футъра*/
-    .goren-footer {
-        flex-direction: column;
-    }
-
-    .footer-spisuk, .socials {
-        display: block;
-        margin: 10px auto;
-        text-align: center;
-    }
+/*JS button*/
+#btn {
+   display: block;           
+    bottom: 40px;             
+    right: 40px;             
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #0f2e4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-
-/* телефони - по-малко от 600px */
-@media screen and (max-width: 600px) {
-    .text h1 {
-        font-size: 24px;
-    }
-    
-    form label {
-        display: block;
-        width: 100%;
-    }
-
-    form input,
-    form textarea {
-        display: block;
-        width: 100%;
-    }
-    
-    
-   .nikola1 {
-        float: none;       
-        display: block;
-        margin: 0 auto 20px;
-        max-width: 300px;
-    }
-    
-    .biografiq {
-        padding: 15px;
-    }
-    
-    /*футъра*/
-    .goren-footer {
-        flex-direction: column;
-    }
-
-    .footer-spisuk, .socials {
-        display: block;
-        margin: 10px auto;
-        text-align: center;
-    }
+#btn:hover {
+    background-color: #274f78;
 }
-
-/* телефони и таблети */
-@media only screen and (max-width: 768px) { 
-   
-    /*за страницата с личностите*/
-    [class*="col-"] { 
-        padding: 15px; 
-        width: 100%; 
-        float: none; 
-    } 
-    
-   .nikola1 {
-        float: none;       
-        display: block;
-        margin: 0 auto 20px;
-        max-width: 300px;
-    }
-    
-    .biografiq {
-        padding: 15px;
-    }
-    
-    /*футъра*/
-    .goren-footer {
-        flex-direction: column;
-    }
-
-    .footer-spisuk, .socials {
-        display: block;
-        margin: 10px auto;
-        text-align: center;
-    }
-} 
-
-/* таблети и по-малки лаптопи*/
-@media only screen and (max-width: 992px) { 
- 
-} 
-
-
-
-
 
 /* НАЧАЛНА СТРАНИЦА */
 .header {
@@ -564,7 +433,7 @@ button {
       color:  #0f2e4d;
    max-width: 900px;
    margin: 0 auto;
-   padding: 0px;  
+   padding: 20px;  
   }
   
 
@@ -635,4 +504,106 @@ button {
         float: none;
     }
 
+}
+
+
+/*МЕДИЯ ЗАЯВКИ*/
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50px;
+        height: auto;
+    }
+
+    .slogan {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    #spisuk li {
+        display: inline-block;
+        width: auto;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    [class*="col-"] {
+        padding: 15px;
+        width: 100%;
+        float: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col-4 {
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .nikola1,
+    .alan1,
+    .hedy1 {
+        float: none;
+        display: block;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+
+    .kula {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .biografiq {
+        padding: 15px;
+    }
+
+    form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    form label {
+        display: block;
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        display: block;
+        width: 100%;
+    }
+
+    .goren-footer {
+        flex-direction: column;
+    }
+
+    .footer-spisuk,
+    .socials {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
 }
